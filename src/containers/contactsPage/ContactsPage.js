@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { ContactForm } from "../../components/contactForm/ContactForm";
+import { TitleList } from "../../components/tileList/TileList";
 
 export const ContactsPage = (props) => {
   /*
@@ -33,6 +35,7 @@ export const ContactsPage = (props) => {
     <div>
       <section>
         <h2>Add Contact</h2>
+        <ContactForm handleSubmit={handleSubmit} />
       </section>
       <hr />
       <section>
