@@ -23,14 +23,14 @@ export const ContactForm = (props) => {
       />
       <input
         type="text"
-        placeholder="Enter phone"
+        placeholder="Enter Phone Number"
         value={props.phone}
         onChange={handlePhoneChange}
         pattern="^[2-9]\d{2}-\d{3}-\d{4}$"
       />
       <input
         type="text"
-        placeholder="Enter email"
+        placeholder="Enter e-mail"
         value={props.email}
         onChange={handleEmailChange}
       />
