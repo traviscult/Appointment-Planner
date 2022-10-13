@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const ContactsPage = () => {
+export const ContactsPage = (props) => {
   /*
   Define state variables for 
   contact info and duplicate check
@@ -16,6 +16,12 @@ export const ContactsPage = () => {
     Add contact info and clear data
     if the contact name is not a duplicate
     */
+    if (duplicateName === false) {
+      props.addContact(name, phone, email);
+      setName("");
+      setPhone("");
+      setEmail("");
+    }
   };
 
   /*
