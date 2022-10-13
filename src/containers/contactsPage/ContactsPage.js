@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const ContactsPage = () => {
   /*
   Define state variables for 
   contact info and duplicate check
   */
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [duplicateName, setDuplicateName] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,7 +26,7 @@ export const ContactsPage = () => {
   return (
     <div>
       <section>
-        <h2>Add Contact</h2> 
+        <h2>Add Contact</h2>
       </section>
       <hr />
       <section>
