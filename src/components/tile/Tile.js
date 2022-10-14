@@ -5,11 +5,11 @@ export const Tile = (props) => {
   console.log(values);
   return (
     <div className="tile-container">
-      {values.map((e) => {
-        if (typeof e === "object") {
-          return <p className="title">{JSON.stringify(e)}</p>;
+      {values.map((element) => {
+        if (typeof element === "object") {
+          return <p className="tile">{JSON.stringify(element)}</p>;
         } else {
-          return <p className="tile">{e}</p>;
+          return <p className="tile">{element}</p>;
         }
       })}
     </div>

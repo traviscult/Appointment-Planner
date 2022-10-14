@@ -14,7 +14,7 @@ export const ContactForm = (props) => {
     props.setEmail(value);
   };
   return (
-    <form>
+    <form onSubmit={props.handleSubmit}>
       <input
         type="text"
         placeholder="Name"
