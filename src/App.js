@@ -9,8 +9,13 @@ function App() {
   Define state variables for 
   contacts and appointments 
   */
+
   const [contacts, setContacts] = useState([
-    { name: "abc", phoneNumber: "123", email: "johndoe@email.com" },
+    {
+      name: "John Doe",
+      phoneNumber: "123-456-7890",
+      email: "johndoe@email.com",
+    },
   ]);
   const [appointments, setAppointments] = useState([]);
   // console.log(contacts, appointments);
