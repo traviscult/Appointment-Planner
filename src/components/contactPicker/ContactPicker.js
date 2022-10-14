@@ -2,7 +2,7 @@ import React from "react";
 
 export const ContactPicker = (props) => {
   const handleChange = ({ target }) => {
-    const { name, value } = target;
+    const { value } = target;
     props.setContact(value);
   };
   return (

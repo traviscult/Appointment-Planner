@@ -19,15 +19,15 @@ export const AppointmentForm = ({
     return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
   };
   const handleTitleChange = ({ target }) => {
-    const { name, value } = target;
+    const { value } = target;
     setTitle(value);
   };
   const handleDateChange = ({ target }) => {
-    const { name, value } = target;
+    const { value } = target;
     setDate(value);
   };
   const handleTimeChange = ({ target }) => {
-    const { name, value } = target;
+    const { value } = target;
     setTime(value);
   };
   return (

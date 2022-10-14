@@ -24,6 +24,7 @@ function App() {
       time: "8:00AM",
     },
   ]);
+  // console.log(contacts, appointments);
 
   const ROUTES = {
     CONTACTS: "/contacts",
@@ -45,11 +46,11 @@ function App() {
     });
   };
 
-  const addAppointment = (title, contactobj, date, time) => {
+  const addAppointment = (title, contactObj, date, time) => {
     setAppointments((prev) => {
       const appointment = {
         title: title,
-        contact: contactobj,
+        contact: contactObj,
         date: date,
         time: time,
       };
